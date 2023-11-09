@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profesores</title>
+</head>
+<body class = "container mt-5">
+    <div class = "alert alert-success display">Lista de Profesores</div>
+
+    {% if ProfJefe %}
+
+        <table class="table">
+            <thead>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>edad</th>  
+                <th>asignatura</th>
+                <th>rut</th>
+                <th>Correo</th>
+                <th>horario</th>
+            </thead>
+            <tbody>
+                {% for profJefe in ProfesoresJefes%}
+                <tr>
+                    <td scope = "row">{{dire.id}}</td>
+                    <td>{{profJefe.nombre}}</td>
+                    <td>{{profJefe.edad}}</td>
+                    <td>{{profJefe.asignatura}}</td>
+                    <td>{{profJefe.rut}}</td>
+                    <td>{{profJefe.Correo}}</td>
+                    <td>{{profJefe.horario}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class = "alert alert-info ">no hay profesores</div>
+    {% endif %}
+
+    <a href=".." class="btn btn-danger">volver</a>
+    <a href="../registrar" class="btn btn-info float-end">Agregar a profesores</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Profesor</title>
+</head>
+<body class= "container mt-5">
+    <div class = "alert alert-info display-1 text-center">Registrar Profesor Jefe</div>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class = "btnn btn-info" value="registrarProfJefe">
+    </form>
+
+    <a href="MostrarDatos" class="btn btn-info mt-5">Profesores</a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="alert alert-info display-1 text center"> Sistema de Directores</div>
+    <a href="MostrarDatos" class="btn btn-info">Profesores Jefes</a>
+</body>
+</html>
